@@ -8,7 +8,7 @@
 <section><h2>New quote</h2><label for="job">Job description</label><textarea id="job"></textarea><div class="row"><div><label for="materials">Materials ($)</label><input id="materials" type="number" min="0" step="0.01" value="0"></div><div><label for="labour">Labour ($)</label><input id="labour" type="number" min="0" step="0.01" value="0"></div></div><button id="create">Create and save quote</button></section>
 <section><h2>Saved quotes</h2><label for="quotes">Choose a quote</label><select id="quotes"><option value="">Choose a quote</option></select><button class="secondary" id="deleteQuote">Delete selected quote</button></section>
 <section id="preview"><h2>Quote</h2><pre id="output">Your quote will appear here.</pre><div class="row"><button id="copy">Copy quote</button><button id="print">Print / Save PDF</button></div></section>
-<section><h2>Backup</h2><button id="backup">Download backup</button><label for="restore">Restore backup (adds missing records)</label><input id="restore" type="file" accept="application/json,.json"></section></main>
+<section><h2>Backup</h2><button id="backup">Download backup</button><label for="restore">Restore backup (adds missing records)</label><input id="restore" type="file" accept="application/json,.json"></section><section><h2>Support QuickQuote</h2><p>If QuickQuote helps you, you can leave an optional contribution.</p><a href="https://paypal.me/msimmonite" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#116b65;color:white;padding:12px 18px;border-radius:8px;text-decoration:none">Support QuickQuote via PayPal</a><p><small>Thanks to GitHub for storing our code.</small></p></section></main>
 <script>
 'use strict';
 const $=id=>document.getElementById(id), key='quickquote-code-v1';
